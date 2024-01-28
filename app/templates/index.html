@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gabriel's ChatBot</title>
+  </head>
+  <body>
+    <h1>Let's chat!</h1>
+    <form method="POST" action="{{ url_for('chatbot') }}">
+      <label for="message">Message</label>
+      <input type="text" id="message" name="message" required />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
