@@ -15,12 +15,13 @@ app = Flask(__name__)
 # Define the home page route
 @app.route("/")
 def home():
+    '''Default API route'''
     return render_template("index.html")
 
 # Define the chatbot route
 @app.route("/chatbot", methods=["POST"])
 def chatbot():
-    # pass
+    '''Routes the user to a chat log after posting their initial question'''
 
     # Get the message from the user input
     user_input = request.form["message"]
@@ -48,3 +49,7 @@ def chatbot():
         user_input=user_input,
         bot_response=bot_response
     )
+
+# Start Flask app
+if __name__ == "__main__":
+    app.run(debug=True)
