@@ -16,3 +16,5 @@ A simple chatbot that leverages `ChatGPT-3.5` in a Flask application.
 - Youtube [guide](https://www.youtube.com/watch?v=rYEpXc6sMS4&ab_channel=RunThat) for a similar template.
 
   _However, double check the official OpenAI documentation as some videos may be using legacy APIs when initialising the OpenAI clients, and therefore are showing different parameters being used._
+
+Gabriel 03/02/2024
